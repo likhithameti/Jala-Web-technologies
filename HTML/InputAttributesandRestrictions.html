@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee> Welcome to the web page </marquee>
+    <!-- Iframe target attribute -->
+    <iframe name="demo_frame" width="100%" height="200px" title="Iframe Demo" ></iframe>
+    <a href="HTMLbasic.html" target="demo_frame">Visit HTML Basics</a>
+
+
+    <hr>
+    <h1>Form Demo</h1>
+    <hr>
+    <form>
+        <!-- text field -->
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" maxlength="10">
+        <hr>
+        <!-- Password -->
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" required>
+        <hr>
+        <!-- options -->
+        <label for="course">Choose a Course:</label>
+        <select id="course" name="course">
+            <option value="cse" selected>CSE</option>
+            <option value="ece">ECE</option>
+            <option value="mech">MECH</option>
+        </select>
+        <hr>
+        <!-- Radio  -->
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <hr>
+        <!-- Range -->
+        <label for="points">Knowledge Scale :</label>
+        <input type="range" id="points" name="points" min="0" max="10">
+        <hr>
+        <!-- File Upload -->
+        <label for="myfile">Select Resume:</label>
+        <input type="file" id="myfile" name="myfile">
+        <hr>
+        <!-- Date of birth -->
+        <label for="start">DOB: </label>
+
+        <input type="date" id="dateofbirth" name="dob"
+               value="2018-07-22"
+               min="1996-01-01" max="2050-12-31">
+        <hr>
+        <input type="submit"></input>
+
+    </form>
+</body>
+</html>
